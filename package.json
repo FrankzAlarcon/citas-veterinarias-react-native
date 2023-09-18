@@ -9,15 +9,47 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@react-native-community/datetimepicker": "6.7.3",
     "expo": "~48.0.18",
     "expo-status-bar": "~1.4.4",
     "react": "18.2.0",
-    "react-native": "0.71.8"
+    "react-native": "0.71.8",
+    "react-native-modal-datetime-picker": "^17.0.0",
+    "react-native-web": "~0.18.10",
+    "react-dom": "18.2.0",
+    "@expo/webpack-config": "^18.0.1",
+    "@react-native-async-storage/async-storage": "1.17.11"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
+    "@babel/eslint-parser": "^7.22.7",
     "@types/react": "~18.0.14",
-    "typescript": "^4.9.4"
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "eslint": "^8.44.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-config-standard-jsx": "^11.0.0",
+    "eslint-config-standard-react": "^13.0.0",
+    "eslint-config-standard-with-typescript": "^36.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-native": "^4.0.0",
+    "typescript": "^4.9.5"
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+      "standard",
+      "standard-jsx",
+      "standard-react"
+    ],
+    "rules": {
+      "react/prop-types": "off",
+      "react/react-in-jsx-scope": "off"
+    }
   },
   "private": true
 }
